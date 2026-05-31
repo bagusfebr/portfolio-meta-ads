@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bagus Febriansyah – Meta Ads & WhatsApp Lead Generation Specialist</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green:       #1D9E75;
+  --green-dark:  #0F6E56;
+  --green-deep:  #085041;
+  --green-light: #E1F5EE;
+  --green-mid:   #9FE1CB;
+  --green-pale:  #f0faf6;
+  --text:        #1a1a18;
+  --text-2:      #3d3d3a;
+  --text-3:      #6b6b66;
+  --text-4:      #9a9a95;
+  --bg:          #f7f7f4;
+  --white:       #ffffff;
+  --border:      rgba(0,0,0,0.08);
+  --border-2:    rgba(0,0,0,0.13);
+  --serif: 'Lora', Georgia, serif;
+  --sans:  'Plus Jakarta Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ─── LAYOUT ─── */
+.container { max-width: 820px; margin: 0 auto; padding: 0 28px; }
+.container-wide { max-width: 960px; margin: 0 auto; padding: 0 28px; }
+
+/* ─── NAV ─── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(247,247,244,0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 15px 0;
+}
+nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-name {
+  font-family: var(--serif);
+  font-size: 16px; font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.2px;
+}
+.nav-right { display: flex; align-items: center; gap: 20px; }
+.nav-link { font-size: 13px; color: var(--text-3); font-weight: 500; }
+.nav-link:hover { color: var(--text); }
+.nav-cta {
+  background: var(--green);
+  color: #fff;
+  font-size: 13px; font-weight: 600;
+  padding: 9px 20px; border-radius: 40px;
+  letter-spacing: 0.1px;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--green-dark); }
+
+/* ─── HERO ─── */
+.hero {
+  padding: 88px 0 72px;
+  border-bottom: 1px solid var(--border);
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--green-light);
+  border: 1px solid var(--green-mid);
+  color: var(--green-deep);
+  font-size: 12px; font-weight: 600;
+  padding: 5px 14px; border-radius: 40px;
+  margin-bottom: 28px;
+  letter-spacing: 0.3px;
+}
+.hero-badge-dot {
+  width: 7px; height: 7px;
+  background: var(--green);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: 50px; line-height: 1.13;
+  letter-spacing: -1.5px; font-weight: 700;
+  color: var(--text);
+  margin-bottom: 22px;
+}
+.hero h1 em { font-style: italic; color: var(--green); }
+.hero-sub {
+  font-size: 17px; color: var(--text-2);
+  max-width: 580px; margin-bottom: 36px;
+  font-weight: 300; line-height: 1.65;
+}
+.hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green);
+  color: #fff;
+  font-size: 15px; font-weight: 600;
+  padding: 15px 30px; border-radius: 40px;
+  display: inline-flex; align-items: center; gap: 9px;
+  transition: background 0.2s, transform 0.15s;
+  border: none; cursor: pointer;
+}
+.btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); }
+.btn-secondary {
+  font-size: 14px; font-weight: 500;
+  color: var(--text-2);
+  border: 1px solid var(--border-2);
+  padding: 14px 24px; border-radius: 40px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-secondary:hover { border-color: var(--green-mid); color: var(--green-dark); }
+
+/* ─── STATS ─── */
+.stats-strip {
+  padding: 44px 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+.stat-item {
+  padding: 0 32px;
+  border-right: 1px solid var(--border);
+}
+.stat-item:first-child { padding-left: 0; }
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  font-family: var(--serif);
+  font-size: 38px; font-weight: 700;
+  color: var(--green-dark);
+  line-height: 1; margin-bottom: 6px;
+}
+.stat-label { font-size: 13px; color: var(--text-3); line-height: 1.4; font-weight: 400; }
+
+/* ─── SECTION BASE ─── */
+section { padding: 72px 0; border-bottom: 1px solid var(--border); }
+.section-label {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.8px; text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px; display: block;
+}
+.section-title {
+  font-family: var(--serif);
+  font-size: 32px; font-weight: 700;
+  letter-spacing: -0.6px;
+  color: var(--text);
+  margin-bottom: 14px; line-height: 1.22;
+}
+.section-desc {
+  font-size: 15px; color: var(--text-3);
+  max-width: 540px; line-height: 1.7;
+}
+
+/* ─── TARGET MARKET ─── */
+.target-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px; margin-top: 36px;
+}
+.target-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px; padding: 20px 22px;
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.target-icon {
+  width: 36px; height: 36px; flex-shrink: 0;
+  background: var(--green-light);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+}
+.target-card h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+.target-card p { font-size: 13px; color: var(--text-3); line-height: 1.5; }
+.target-problems {
+  margin-top: 36px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px; overflow: hidden;
+}
+.target-problems-header {
+  background: var(--green-light);
+  border-bottom: 1px solid var(--green-mid);
+  padding: 16px 24px;
+}
+.target-problems-header h3 {
+  font-size: 14px; font-weight: 600;
+  color: var(--green-deep);
+}
+.problem-list { padding: 8px 0; }
+.problem-row {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px; color: var(--text-2);
+}
+.problem-row:last-child { border-bottom: none; }
+.problem-row::before {
+  content: '→';
+  color: var(--green);
+  font-weight: 600; flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ─── FRAMEWORK ─── */
+.framework-visual {
+  margin-top: 40px;
+  display: flex; flex-direction: column; gap: 0;
+  max-width: 460px;
+}
+.fw-step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 0;
+  position: relative;
+}
+.fw-step:last-child .fw-line { display: none; }
+.fw-left {
+  display: flex; flex-direction: column;
+  align-items: center;
+}
+.fw-dot {
+  width: 40px; height: 40px;
+  background: var(--white);
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif);
+  font-size: 16px; font-weight: 700;
+  color: var(--green);
+  flex-shrink: 0;
+  z-index: 1;
+}
+.fw-dot.active {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
+.fw-line {
+  width: 2px; background: var(--green-mid);
+  flex: 1; min-height: 32px;
+}
+.fw-content {
+  padding: 8px 0 24px 16px;
+}
+.fw-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+.fw-desc { font-size: 13px; color: var(--text-3); }
+
+/* ─── STUDI KASUS ─── */
+.case-list { margin-top: 40px; display: flex; flex-direction: column; gap: 20px; }
+.case-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.case-card:hover {
+  border-color: var(--green-mid);
+  box-shadow: 0 4px 20px rgba(29,158,117,0.08);
+}
+.case-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px; align-items: start;
+  padding: 28px 28px 20px;
+}
+.case-num {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--green); margin-bottom: 8px;
+}
+.case-card h3 {
+  font-family: var(--serif);
+  font-size: 19px; font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.3px; line-height: 1.3;
+  margin-bottom: 10px;
+}
+.case-card p { font-size: 14px; color: var(--text-3); line-height: 1.65; }
+.case-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.tag {
+  font-size: 11px; font-weight: 600;
+  padding: 4px 11px; border-radius: 40px;
+  background: var(--green-light);
+  color: var(--green-deep);
+  border: 1px solid var(--green-mid);
+}
+.case-result-box {
+  background: var(--green-light);
+  border: 1px solid var(--green-mid);
+  border-radius: 12px;
+  padding: 16px 20px; text-align: center;
+  min-width: 110px; flex-shrink: 0;
+}
+.case-result-num {
+  font-family: var(--serif);
+  font-size: 28px; font-weight: 700;
+  color: var(--green-dark);
+  line-height: 1; display: block;
+  margin-bottom: 5px;
+}
+.case-result-label {
+  font-size: 11px; font-weight: 600;
+  color: var(--green-deep); line-height: 1.3;
+}
+
+/* ─── BUKTI / SCREENSHOT STYLING ─── */
+.proof-section-inner { margin-top: 40px; }
+.proof-intro {
+  font-size: 15px; color: var(--text-3);
+  line-height: 1.7; margin-bottom: 32px;
+}
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; margin-bottom: 24px;
+}
+.proof-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px; overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.proof-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--green-mid);
+  box-shadow: 0 10px 25px -5px rgba(29, 158, 117, 0.1);
+}
+.proof-screenshot {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background: #f0f0ed;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.proof-screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.proof-card:hover .proof-screenshot img {
+  transform: scale(1.04);
+}
+.proof-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 80, 65, 0.5);
+  backdrop-filter: blur(1.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.proof-card:hover .proof-overlay {
+  opacity: 1;
+}
+.proof-zoom-badge {
+  color: var(--white);
+  background: var(--green-dark);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.proof-card-body { padding: 14px 16px; }
+.proof-card-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+.proof-card-label { font-size: 12px; color: var(--text-3); }
+.proof-note {
+  background: var(--green-light);
+  border: 1px solid var(--green-mid);
+  border-radius: 10px; padding: 14px 18px;
+  font-size: 13px; color: var(--green-deep);
+  line-height: 1.55; margin-top: 8px;
+}
+.proof-note strong { font-weight: 600; }
+
+/* ─── LAYANAN & ACCENT PRICING CARD ─── */
+.offer-box {
+  margin-top: 40px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px; overflow: hidden;
+}
+.offer-header {
+  background: var(--green-deep);
+  color: #fff;
+  padding: 36px;
+  display: flex; justify-content: space-between;
+  align-items: center; gap: 24px;
+}
+.offer-eyebrow {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--green-mid); margin-bottom: 8px;
+}
+.offer-header h3 {
+  font-family: var(--serif);
+  font-size: 26px; font-weight: 700;
+  margin-bottom: 6px; line-height: 1.2;
+  color: #fff;
+}
+.offer-header-desc { font-size: 14px; opacity: 0.8; color: #fff; max-width: 450px; }
+
+/* Elegant Pricing Accent Card */
+.offer-price-card {
+  background: var(--white);
+  color: var(--text);
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--green-mid);
+  box-shadow: 0 10px 22px -4px rgba(8, 80, 65, 0.15);
+  text-align: center;
+  min-width: 180px;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.offer-price-card:hover {
+  transform: translateY(-2px);
+}
+.offer-price-card .duration {
+  font-size: 11px;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2px;
+}
+.offer-price-card .amount {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--green-dark);
+  line-height: 1.2;
+  display: block;
+}
+
+.offer-deliverables { padding: 28px 36px; border-bottom: 1px solid var(--border); }
+.deliverables-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 16px; }
+.deliverable-list { display: flex; flex-direction: column; gap: 12px; }
+.deliverable-item {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 14px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.deliverable-num {
+  font-family: var(--serif);
+  font-size: 15px; font-weight: 700;
+  color: var(--green); min-width: 24px;
+  flex-shrink: 0; padding-top: 1px;
+}
+.deliverable-content h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+.deliverable-content p { font-size: 13px; color: var(--text-3); line-height: 1.55; }
+.offer-not-included { padding: 20px 36px; border-bottom: 1px solid var(--border); }
+.not-included-title { font-size: 12px; font-weight: 600; color: var(--text-3); margin-bottom: 10px; }
+.not-included-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.not-pill {
+  font-size: 12px; color: var(--text-3);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 5px 12px; border-radius: 40px;
+  display: flex; align-items: center; gap: 5px;
+}
+.not-pill::before { content: '✕'; font-size: 9px; color: var(--text-4); }
+.offer-cta-row {
+  padding: 24px 36px;
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+
+/* ─── CARA KERJA ─── */
+.steps { margin-top: 40px; }
+.step-row {
+  display: grid; grid-template-columns: 56px 1fr;
+  gap: 20px; padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.step-row:last-child { border-bottom: none; }
+.step-num-circle {
+  width: 44px; height: 44px;
+  background: var(--green-light);
+  border: 1.5px solid var(--green-mid);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif);
+  font-size: 19px; font-weight: 700;
+  color: var(--green-dark);
+  flex-shrink: 0;
+}
+.step-row h3 { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 5px; }
+.step-row p { font-size: 14px; color: var(--text-3); line-height: 1.6; }
+
+/* ─── TENTANG ─── */
+.about-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 44px; margin-top: 40px; align-items: start;
+}
+.about-photo-wrap { display: flex; flex-direction: column; gap: 12px; }
+.about-avatar {
+  width: 100%; aspect-ratio: 1;
+  background: var(--green-light);
+  border: 1.5px solid var(--green-mid);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.about-avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.about-location {
+  font-size: 12px; color: var(--text-3);
+  text-align: center; font-weight: 500;
+}
+.about-name {
+  font-family: var(--serif);
+  font-size: 26px; font-weight: 700;
+  letter-spacing: -0.4px; color: var(--text);
+  margin-bottom: 4px;
+}
+.about-role { font-size: 14px; color: var(--green); font-weight: 600; margin-bottom: 18px; }
+.about-text { font-size: 15px; color: var(--text-2); line-height: 1.72; margin-bottom: 20px; }
+.about-highlights { display: flex; flex-wrap: wrap; gap: 8px; }
+.highlight-pill {
+  font-size: 12px; font-weight: 500;
+  padding: 5px 13px; border-radius: 40px;
+  background: var(--white);
+  border: 1px solid var(--border-2);
+  color: var(--text-2);
+}
+
+/* ─── LIGHTBOX MODAL ─── */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(10, 15, 12, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.lightbox.active {
+  display: flex;
+  opacity: 1;
+}
+.lightbox-content {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  transform: scale(0.95);
+  transition: transform 0.25s ease;
+}
+.lightbox.active .lightbox-content {
+  transform: scale(1);
+}
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: rgba(255,255,255,0.7);
+  font-size: 32px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: color 0.2s, background 0.2s;
+}
+.lightbox-close:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+}
+
+/* ─── CTA FINAL ─── */
+.cta-final { padding: 80px 0; border-bottom: none; }
+.cta-box {
+  background: var(--green-deep);
+  border-radius: 22px; padding: 60px 52px;
+  text-align: center; color: #fff;
+  position: relative; overflow: hidden;
+}
+.cta-box::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 260px; height: 260px;
+  background: rgba(29,158,117,0.2);
+  border-radius: 50%;
+}
+.cta-box::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; left: -40px;
+  width: 180px; height: 180px;
+  background: rgba(29,158,117,0.15);
+  border-radius: 50%;
+}
+.cta-box-inner { position: relative; z-index: 1; }
+.cta-box h2 {
+  font-family: var(--serif);
+  font-size: 36px; font-weight: 700;
+  letter-spacing: -0.6px; color: #fff;
+  margin-bottom: 14px; line-height: 1.2;
+}
+.cta-box p { font-size: 16px; opacity: 0.82; color: #fff; margin-bottom: 36px; }
+.btn-wa {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #fff; color: var(--green-deep);
+  font-size: 16px; font-weight: 600;
+  padding: 17px 36px; border-radius: 40px;
+  transition: transform 0.15s, background 0.2s;
+}
+.btn-wa:hover { background: var(--green-light); transform: translateY(-2px); }
+.wa-svg { width: 22px; height: 22px; flex-shrink: 0; }
+.cta-note {
+  margin-top: 18px;
+  font-size: 13px; opacity: 0.65; color: #fff;
+}
+
+/* ─── FOOTER ─── */
+footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 13px; color: var(--text-4);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 640px) {
+  .hero h1 { font-size: 34px; letter-spacing: -0.8px; }
+  .hero-sub { font-size: 15px; }
+  .stats-grid { grid-template-columns: 1fr; gap: 0; }
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+  .stat-item:last-child { border-bottom: none; }
+  .target-grid { grid-template-columns: 1fr; }
+  .proof-grid { grid-template-columns: 1fr; }
+  .case-header { grid-template-columns: 1fr; }
+  .case-result-box { text-align: left; min-width: 0; width: auto; display: inline-block; }
+  .offer-header { flex-direction: column; gap: 20px; align-items: stretch; }
+  .offer-price-card { text-align: left; min-width: 0; }
+  .about-layout { grid-template-columns: 1fr; }
+  .about-avatar { max-width: 140px; }
+  .cta-box { padding: 40px 24px; }
+  .cta-box h2 { font-size: 26px; }
+  .offer-deliverables, .offer-not-included, .offer-cta-row, .offer-header { padding-left: 22px; padding-right: 22px; }
+  nav .nav-right .nav-link { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <span class="nav-name">Bagus Febriansyah</span>
+    <div class="nav-right">
+      <a href="#studi-kasus" class="nav-link">Studi Kasus</a>
+      <a href="#layanan" class="nav-link">Layanan</a>
+      <a href="https://wa.me/6285171116263?text=Halo%20Bagus%2C%20saya%20ingin%20konsultasi" class="nav-cta">Chat WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Tersedia untuk klien baru
+    </div>
+    <h1>Bantu bisnis kamu dapat<br>lebih banyak <em>lead WhatsApp</em><br>dari iklan di Meta Ads</h1>
+    <p class="hero-sub">Saya menggabungkan Meta Ads, Landing Page, dan Tracking yang akurat — supaya setiap rupiah iklan yang sudah kamu keluarkan menghasilkan percakapan WhatsApp yang nyata dari calon pembeli yang serius.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/6285171116263?text=Halo%20Bagus%2C%20saya%20ingin%20konsultasi" class="btn-primary">
+        <svg class="wa-svg" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L0 24l6.334-1.508A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.804 9.804 0 01-5.012-1.376l-.36-.214-3.753.893.944-3.646-.235-.374A9.786 9.786 0 012.182 12c0-5.414 4.404-9.818 9.818-9.818 5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/></svg>
+        Konsultasi Gratis
+      </a>
+      <a href="#studi-kasus" class="btn-secondary">Lihat hasil kerja →</a>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">±400 Jt</div>
+        <div class="stat-label">Total pendapatan bisnis fashion muslimah yang saya kelola sendiri</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">±800 Jt</div>
+        <div class="stat-label">Total budget Meta Ads yang sudah dijalankan</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5+ Tahun</div>
+        <div class="stat-label">Menjalankan bisnis online sejak 2019 sampai sekarang</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TARGET MARKET -->
+<section>
+  <div class="container">
+    <span class="section-label">Cocok untuk siapa</span>
+    <h2 class="section-title">Saya bekerja paling baik dengan bisnis yang pakai WhatsApp sebagai jalur penjualan utama</h2>
+    <p class="section-desc">Kalau bisnis kamu mengandalkan chat untuk closing, saya bisa membantu memastikan lebih banyak orang yang tepat sampai ke WhatsApp kamu.</p>
+
+    <div class="target-grid">
+      <div class="target-card">
+        <div class="target-icon">👗</div>
+        <div>
+          <h3>Fashion & Skincare</h3>
+          <p>Brand yang jual via Iklan dan WA tapi belum optimal</p>
+        </div>
+      </div>
+      <div class="target-card">
+        <div class="target-icon">💆</div>
+        <div>
+          <h3>Klinik Kecantikan</h3>
+          <p>Klinik yang ingin dapat booking lebih banyak lewat konsultasi WhatsApp</p>
+        </div>
+      </div>
+      <div class="target-card">
+        <div class="target-icon">✈️</div>
+        <div>
+          <h3>Travel Umroh & Haji</h3>
+          <p>Biro travel yang butuh calon jamaah masuk dan mulai tanya via WA</p>
+        </div>
+      </div>
+      <div class="target-card">
+        <div class="target-icon">🍖</div>
+        <div>
+          <h3>Katering & Aqiqah</h3>
+          <p>Jasa yang mengutamakan order dari WA dan ingin volume yang lebih maksimal</p>
+        </div>
+      </div>
+      <div class="target-card">
+        <div class="target-icon">💼</div>
+        <div>
+          <h3>Jasa Profesional</h3>
+          <p>Konsultan, freelancer, dan agensi yang akuisisi klien via WhatsApp</p>
+        </div>
+      </div>
+      <div class="target-card">
+        <div class="target-icon">🏪</div>
+        <div>
+          <h3>Bisnis Lokal</h3>
+          <p>Toko dan usaha lokal yang sudah pakai WA tapi belum ada sistem iklan yang jelas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="target-problems" style="margin-top: 28px;">
+      <div class="target-problems-header">
+        <h3>Masalah yang paling sering saya temukan di bisnis klien</h3>
+      </div>
+      <div class="problem-list">
+        <div class="problem-row">Iklan sudah jalan, budget habis banyak, tapi chat WhatsApp yang masuk masih sepi</div>
+        <div class="problem-row">Landing page ada, tapi minim konversi, pengunjung langsung kabur tanpa ngapa-ngapain</div>
+        <div class="problem-row">Data di dashboard Meta kelihatan bagus, tapi kenyataannya tidak sebanding dengan yang masuk</div>
+        <div class="problem-row">Tidak tahu iklan mana yang benar-benar menghasilkan dan mana yang hanya buang uang</div>
+        <div class="problem-row">Sudah ada yang chat, tapi proses follow-up belum rapi sehingga banyak yang tidak closing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORK -->
+<section>
+  <div class="container">
+    <span class="section-label">Cara saya melihat bisnis kamu</span>
+    <h2 class="section-title">Satu sistem yang sambung-menyambung dari awal sampai akhir</h2>
+    <p class="section-desc">Saya tidak hanya mengerjakan iklan saja. Saya melihat seluruh perjalanan — dari orang pertama kali lihat iklan kamu, sampai akhirnya kirim pesan ke WhatsApp dan jadi pelanggan.</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 40px; align-items: start;">
+      <div class="framework-visual">
+        <div class="fw-step">
+          <div class="fw-left"><div class="fw-dot">1</div><div class="fw-line"></div></div>
+          <div class="fw-content">
+            <div class="fw-title">Iklan Meta Ads</div>
+            <div class="fw-desc">Menjangkau orang yang tepat dengan pesan yang tepat di waktu yang tepat</div>
+          </div>
+        </div>
+        <div class="fw-step">
+          <div class="fw-left"><div class="fw-dot">2</div><div class="fw-line"></div></div>
+          <div class="fw-content">
+            <div class="fw-title">Landing Page</div>
+            <div class="fw-desc">Halaman yang meyakinkan pengunjung untuk mengambil satu langkah: chat WA</div>
+          </div>
+        </div>
+        <div class="fw-step">
+          <div class="fw-left"><div class="fw-dot active">3</div><div class="fw-line"></div></div>
+          <div class="fw-content">
+            <div class="fw-title" style="color: var(--green);">Chat WhatsApp masuk ✓</div>
+            <div class="fw-desc">Lead yang sudah hangat dan siap dilayani — ini tujuan utama sistem ini</div>
+          </div>
+        </div>
+        <div class="fw-step">
+          <div class="fw-left"><div class="fw-dot">4</div><div class="fw-line"></div></div>
+          <div class="fw-content">
+            <div class="fw-title">Tracking & Data</div>
+            <div class="fw-desc">Mengukur apa yang benar-benar bekerja supaya optimasi tidak hanya tebak-tebakan</div>
+          </div>
+        </div>
+        <div class="fw-step">
+          <div class="fw-left"><div class="fw-dot">5</div></div>
+          <div class="fw-content">
+            <div class="fw-title">Pelanggan</div>
+            <div class="fw-desc">Ujung akhir yang kita inginkan — orang yang sudah percaya dan membeli</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 24px;">
+          <p style="font-size: 13px; font-weight: 600; color: var(--text-3); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px;">Yang membedakan saya</p>
+          <p style="font-size: 15px; color: var(--text-2); line-height: 1.7; margin-bottom: 16px;">Banyak freelancer Meta Ads yang hanya melihat dashboard iklan. Saya melihat keseluruhan sistem — karena saya pernah menjalankan bisnis saya sendiri.</p>
+          <p style="font-size: 15px; color: var(--text-2); line-height: 1.7; margin-bottom: 16px;">Saya tahu rasanya sudah keluar budget banyak untuk iklan tapi chat sepi. Saya tahu landing page seperti apa yang benar-benar membuat orang mau chat. Dan saya tahu tracking yang benar itu seperti apa — bukan hanya angka yang terlihat bagus di dashboard.</p>
+          <div style="background: var(--green-light); border: 1px solid var(--green-mid); border-radius: 8px; padding: 12px 16px; margin-top: 4px;">
+            <p style="font-size: 13px; color: var(--green-deep); font-weight: 500; line-height: 1.5;">"Saya memahami bagaimana bisnis mendapatkan pelanggan melalui WhatsApp and menggunakan Meta Ads sebagai salah satu alat untuk mencapainya."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDI KASUS -->
+<section id="studi-kasus">
+  <div class="container">
+    <span class="section-label">Studi kasus nyata</span>
+    <h2 class="section-title">Bukan cuma teori — ini pelajaran dari uang sendiri yang pernah jalan</h2>
+    <p class="section-desc">Semua studi kasus ini berasal dari pengalaman nyata mengelola bisnis Fashion Muslimah sejak 2019. Saya pernah naik, jatuh, dan bangkit lagi — dan setiap proses itu mengajarkan sesuatu yang tidak bisa dipelajari dari kursus mana pun.</p>
+
+    <div class="case-list">
+      <!-- Kasus 1 -->
+      <div class="case-card">
+        <div class="case-header">
+          <div>
+            <div class="case-num">Studi Kasus 01</div>
+            <h3>Landing page yang dirancang tepat bisa melipatgandakan jumlah chat WhatsApp yang masuk</h3>
+            <p>Saya menemukan bahwa perbedaan antara landing page biasa dengan yang dirancang khusus untuk mendorong chat WA bisa sangat besar. Bukan soal desain yang lebih cantik — tapi soal struktur pesan, urutan informasi, dan di mana tombol WhatsApp diletakkan.</p>
+            <div class="case-tags">
+              <span class="tag">Landing Page</span>
+              <span class="tag">Copywriting</span>
+              <span class="tag">CTA WhatsApp</span>
+              <span class="tag">Konversi</span>
+            </div>
+          </div>
+          <div class="case-result-box">
+            <span class="case-result-num">2–3×</span>
+            <span class="case-result-label">lebih banyak<br>chat masuk</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kasus 2 -->
+      <div class="case-card">
+        <div class="case-header">
+          <div>
+            <div class="case-num">Studi Kasus 02</div>
+            <h3>Data iklan yang tidak akurat bisa membuat kamu terus salah ambil keputusan</h3>
+            <p>Saya menemukan bahwa selisih antara chat yang benar-benar masuk dengan yang tercatat di Meta bisa sangat jauh. Setelah memperbaiki sistem tracking dengan cara yang lebih tepat, keputusan soal iklan mana yang perlu dinaikkan atau dimatikan jadi jauh lebih percaya diri.</p>
+            <div class="case-tags">
+              <span class="tag">Tracking Meta Pixel</span>
+              <span class="tag">Data Akurat</span>
+              <span class="tag">Optimasi Iklan</span>
+            </div>
+          </div>
+          <div class="case-result-box">
+            <span class="case-result-num">↓ Jauh</span>
+            <span class="case-result-label">lebih sedikit<br>data yang meleset</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kasus 3 -->
+      <div class="case-card">
+        <div class="case-header">
+          <div>
+            <div class="case-num">Studi Kasus 03</div>
+            <h3>Membangun brand fashion dari nol — sampai ratusan juta omzet, masa krisis, dan bangkit lagi</h3>
+            <p>Sejak 2019 saya menjalankan bisnis Fashion Muslimah sendiri. Pernah di titik terbaik, lalu 2024 hampir hancur karena sebuah masalah dengan vendor disaat momen Ramadhan — ratusan order tidak terpenuhi, puluhan juta iklan terbuang. Bangkit dari kejadian ini dengan modal seadanya memaksa saya untuk Lebih Efisien dan Efektif. Pengalaman ini mengajarkan saya cara membangun sistem yang tahan banting, bukan hanya yang kelihatan bagus di dashboard.</p>
+            <div class="case-tags">
+              <span class="tag">Meta Ads</span>
+              <span class="tag">WhatsApp</span>
+              <span class="tag">Manajemen Krisis</span>
+              <span class="tag">Recovery Bisnis</span>
+            </div>
+          </div>
+          <div class="case-result-box">
+            <span class="case-result-num">±400Jt</span>
+            <span class="case-result-label">total omzet<br>tercatat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUKTI PENGALAMAN -->
+<section>
+  <div class="container">
+    <span class="section-label">Bukti pengalaman</span>
+    <h2 class="section-title">Angka yang bisa saya tunjukkan langsung, bukan klaim kosong</h2>
+    <div class="proof-section-inner">
+      <p class="proof-intro">Saya hanya menampilkan bukti yang masih bisa diverifikasi — berikut adalah tangkapan layar dashboard performa nyata yang saya kelola. Silakan klik gambar untuk melihat lebih jelas.</p>
+
+      <div class="proof-grid">
+        <!-- Bukti 1 -->
+        <div class="proof-card" onclick="openLightbox('https://i.postimg.cc/6QBjghDq/ss-dashboard-meta.jpg')">
+          <div class="proof-screenshot">
+            <img src="https://i.postimg.cc/6QBjghDq/ss-dashboard-meta.jpg" alt="Meta Ads Dashboard Performa" onerror="this.onerror=null; this.src='https://placehold.co/600x400/f0faf6/085041?text=Meta+Ads+Dashboard';">
+            <div class="proof-overlay">
+              <span class="proof-zoom-badge">🔍 Perbesar Gambar</span>
+            </div>
+          </div>
+          <div class="proof-card-body">
+            <div class="proof-card-title">Meta Ads Manager</div>
+            <div class="proof-card-label">Pengeluaran anggaran iklan nyata dan distribusi performa campaign</div>
+          </div>
+        </div>
+
+        <!-- Bukti 2 -->
+        <div class="proof-card" onclick="openLightbox('https://i.postimg.cc/Jh8ct4qg/Screenshot-2026-05-31-153826.png')">
+          <div class="proof-screenshot">
+            <img src="https://i.postimg.cc/Jh8ct4qg/Screenshot-2026-05-31-153826.png" alt="Dashboard Everpro Omzet" onerror="this.onerror=null; this.src='https://placehold.co/600x400/f0faf6/085041?text=Everpro+Dashboard';">
+            <div class="proof-overlay">
+              <span class="proof-zoom-badge">🔍 Perbesar Gambar</span>
+            </div>
+          </div>
+          <div class="proof-card-body">
+            <div class="proof-card-title">Everpro — Omzet Bisnis</div>
+            <div class="proof-card-label">Omzet total riil yang tercatat di platform manajemen order</div>
+          </div>
+        </div>
+
+        <!-- Bukti 3 -->
+        <div class="proof-card" onclick="openLightbox('https://i.postimg.cc/ZqTGhmGt/perbandingan-tracking.png')">
+          <div class="proof-screenshot">
+            <img src="https://i.postimg.cc/ZqTGhmGt/perbandingan-tracking.png" alt="Dashboard Perbandingan Tracking" onerror="this.onerror=null; this.src='https://placehold.co/600x400/f0faf6/085041?text=Tracking+Dashboard';">
+            <div class="proof-overlay">
+              <span class="proof-zoom-badge">🔍 Perbesar Gambar</span>
+            </div>
+          </div>
+          <div class="proof-card-body">
+            <div class="proof-card-title">Event Tracking & Perbaikan Data</div>
+            <div class="proof-card-label">Selisih pencatatan data sebelum vs sesudah akurasi tracking dimaksimalkan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proof-note">
+        <strong>Catatan:</strong> Yang terpenting bukan berapa banyak screenshot yang saya miliki, tetapi apakah pendekatan yang saya gunakan relevan untuk bisnis Anda. Jika saat ini Anda ingin mendapatkan lebih banyak lead WhatsApp melalui Meta Ads, Landing Page, dan Tracking yang lebih baik, mari berdiskusi.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan">
+  <div class="container">
+    <span class="section-label">Layanan</span>
+    <h2 class="section-title">Satu sistem lengkap untuk dapat lead WhatsApp yang lebih terukur</h2>
+    <p class="section-desc">Saya tidak mengerjakan satu bagian saja — saya membantu membangun keseluruhan sistem dari iklan sampai chat masuk.</p>
+
+    <div class="offer-box">
+      <div class="offer-header">
+        <div>
+          <div class="offer-eyebrow">Paket Layanan Utama</div>
+          <h3>Meta Ads Lead Generation System</h3>
+          <p class="offer-header-desc">Sistem lengkap: setup iklan terstruktur, perancangan landing page persuasif, ketepatan tracking event, serta audit alur konversi WhatsApp.</p>
+        </div>
+        <!-- HIGHLY NOTICABLE VALUE / PRICING BADGE CARD -->
+        <div class="offer-price-card">
+          <span class="duration">Mulai dari:</span>
+          <span class="amount">Rp 1.250.000</span>
+        </div>
+      </div>
+
+      <div class="offer-deliverables">
+        <div class="deliverables-title">Yang kamu dapatkan:</div>
+        <div class="deliverable-list">
+          <div class="deliverable-item">
+            <div class="deliverable-num">01</div>
+            <div class="deliverable-content">
+              <h4>Setup Campaign Meta Ads</h4>
+              <p>Struktur campaign, objective, audience, conversion event — semua ditata dari awal supaya iklan berjalan lebih rapi dan bisa dioptimasi dengan benar.</p>
+            </div>
+          </div>
+          <div class="deliverable-item">
+            <div class="deliverable-num">02</div>
+            <div class="deliverable-content">
+              <h4>Landing Page Lead Generation</h4>
+              <p>Halaman responsif dan mobile-friendly yang dirancang khusus untuk mendorong satu aksi: chat WhatsApp. Struktur, copywriting, dan CTA-nya disesuaikan dengan bisnis kamu.</p>
+            </div>
+          </div>
+          <div class="deliverable-item">
+            <div class="deliverable-num">03</div>
+            <div class="deliverable-content">
+              <h4>Setup Tracking Dasar</h4>
+              <p>Meta Pixel, event tracking, dan integrasi CAPI supaya data yang masuk ke dashboard lebih bisa dipercaya — bukan hanya angka yang kelihatan bagus tapi tidak akurat.</p>
+            </div>
+          </div>
+          <div class="deliverable-item">
+            <div class="deliverable-num">04</div>
+            <div class="deliverable-content">
+              <h4>Monitoring Lead & WhatsApp Funnel</h4>
+              <p>Review performa lead, jumlah WA yang masuk, kualitas dasar lead, dan identifikasi di mana orang-orang "hilang" sebelum sampai ke WhatsApp kamu.</p>
+            </div>
+          </div>
+          <div class="deliverable-item">
+            <div class="deliverable-num">05</div>
+            <div class="deliverable-content">
+              <h4>Review SOP Follow-Up WhatsApp</h4>
+              <p>Audit alur chat, respon awal, dan proses follow-up yang sudah ada — lalu memberikan rekomendasi perbaikan yang konkret. <em style="color: var(--text-4);">(Saya tidak menjalankan CS, hanya review dan rekomendasi.)</em></p>
+            </div>
+          </div>
+          <div class="deliverable-item">
+            <div class="deliverable-num">06</div>
+            <div class="deliverable-content">
+              <h4>Evaluasi Tracking & Data Iklan</h4>
+              <p>Review kualitas event tracking, performa iklan, dan analisis kebocoran iklan supaya sistem iklan punya dasar yang lebih kuat.</p>
+            </div>
+          </div>
+          <div class="deliverable-item">
+            <div class="deliverable-num">07</div>
+            <div class="deliverable-content">
+              <h4>Laporan & Evaluasi</h4>
+              <p>Ringkasan performa, temuan utama, insight dari data yang ada, dan prioritas perbaikan yang paling perlu dilakukan selanjutnya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-not-included">
+        <div class="not-included-title">Yang tidak termasuk dalam layanan ini:</div>
+        <div class="not-included-pills">
+          <span class="not-pill">Menjadi Customer Service</span>
+          <span class="not-pill">Menjawab chat customer</span>
+          <span class="not-pill">Konten harian</span>
+          <span class="not-pill">Jaminan closing</span>
+          <span class="not-pill">Jaminan jumlah lead</span>
+          <span class="not-pill">Jaminan ROAS tertentu</span>
+          <span class="not-pill">Operasional bisnis harian</span>
+        </div>
+      </div>
+
+      <div class="offer-cta-row">
+        <a href="https://wa.me/6285171116263?text=Halo%20Bagus%2C%20saya%20ingin%20konsultasi%20tentang%20layanan%20Meta%20Ads%20Lead%20Generation" class="btn-primary">
+          <svg class="wa-svg" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L0 24l6.334-1.508A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.804 9.804 0 01-5.012-1.376l-.36-.214-3.753.893.944-3.646-.235-.374A9.786 9.786 0 012.182 12c0-5.414 4.404-9.818 9.818-9.818 5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/></svg>
+          Diskusi Kebutuhan Saya
+        </a>
+        <span style="font-size: 13px; color: var(--text-3);">Konsultasi awal gratis, tidak ada kewajiban</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARA KERJA -->
+<section>
+  <div class="container">
+    <span class="section-label">Prosesnya seperti apa</span>
+    <h2 class="section-title">Mudah dan tidak perlu kamu pusing soal teknis</h2>
+    <p class="section-desc">Kamu cukup ceritakan kondisi bisnis dan apa yang ingin dicapai. Saya yang urus Iklannya.</p>
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-num-circle">1</div>
+        <div>
+          <h3>Diskusi awal via WhatsApp — gratis</h3>
+          <p>Kita ngobrol santai dulu. Saya ingin pahami bisnis kamu, siapa targetnya, iklan apa yang sudah jalan, dan masalah utama yang paling dirasakan sekarang.</p>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num-circle">2</div>
+        <div>
+          <h3>Audit & rencana kerja</h3>
+          <p>Saya review kondisi iklan, landing page, dan tracking yang ada saat ini — lalu menyusun rencana perbaikan yang paling prioritas untuk situasi bisnis kamu.</p>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num-circle">3</div>
+        <div>
+          <h3>Eksekusi sistem</h3>
+          <p>Setup campaign, landing page, tracking, dan funnel dikerjakan sesuai rencana yang sudah disepakati. Kamu bisa pantau progresnya setiap saat.</p>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num-circle">4</div>
+        <div>
+          <h3>Monitoring & laporan</h3>
+          <p>Setelah sistem jalan, saya pantau performa, identifikasi kebocoran yang ada, dan kasih laporan beserta rekomendasi langkah selanjutnya yang jelas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section>
+  <div class="container">
+    <span class="section-label">Tentang saya</span>
+    <h2 class="section-title">Saya bukan konsultan yang hanya tahu teori dari kursus</h2>
+    <div class="about-layout">
+      <div class="about-photo-wrap">
+        <div class="about-avatar">
+          <img src="https://i.postimg.cc/PqLBqJV0/DAVI-CL36.jpg" alt="Foto Profil Bagus Febriansyah" onerror="this.onerror=null; this.src='https://placehold.co/200x200/e1f5ee/085041?text=BF';">
+        </div>
+        <div class="about-location">📍 Malang, Indonesia</div>
+      </div>
+      <div>
+        <div class="about-name">Bagus Febriansyah</div>
+        <div class="about-role">Meta Ads & WhatsApp Lead Generation Specialist</div>
+        <p class="about-text">Sejak 2019, saya menjalankan bisnis Fashion Muslimah online sendiri — dari nol, tumbuh sampai ribuan order per bulan, dengan omzet ratusan juta, lalu 2024 seketika hampir hancur ketika suatu kejadian disaat momen Ramadhan. Ratusan order tidak terpenuhi, puluhan juta iklan terbuang, dan bisnis hampir bangkrut.</p>
+        <p class="about-text">Dari pengalaman itu, dengan modal terbatas saya belajar cara membangun sistem yang benar-benar efisien: iklan yang tepat sasaran, landing page yang mengajak orang untuk chat, dan tracking yang bisa dipercaya — bukan sekadar angka bagus di dashboard.</p>
+        <p class="about-text">Sekarang saya membantu bisnis lain menghindari kesalahan yang dulu pernah saya buat sendiri. Saya memahami apa yang dirasakan pemilik usaha ketika iklan jalan tapi hasil tidak sebanding — karena saya pernah ada di posisi itu.</p>
+        <div class="about-highlights">
+          <span class="highlight-pill">Meta Ads Specialist</span>
+          <span class="highlight-pill">Landing Page Architect</span>
+          <span class="highlight-pill">WhatsApp Funnel Optimization</span>
+          <span class="highlight-pill">Conversion Event Tracking</span>
+          <span class="highlight-pill">Founder Bisnis Fashion Muslimah</span>
+          <span class="highlight-pill">Sarjana Teknik Kimia (ITS)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<div class="cta-final">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-box-inner">
+        <h2>Siap dapat lebih banyak lead WhatsApp yang terukur?</h2>
+        <p>Kalau bisnis kamu pakai WhatsApp sebagai jalur penjualan dan ingin lead yang lebih konsisten dari Meta Ads — mari diskusi dulu. Tidak ada kewajiban apa pun.</p>
+        <a href="https://wa.me/6285171116263?text=Halo%20Bagus%2C%20saya%20ingin%20diskusi%20tentang%20iklan%20Meta%20Ads%20untuk%20bisnis%20saya" class="btn-wa">
+          <svg class="wa-svg" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L0 24l6.334-1.508A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.804 9.804 0 01-5.012-1.376l-.36-.214-3.753.893.944-3.646-.235-.374A9.786 9.786 0 012.182 12c0-5.414 4.404-9.818 9.818-9.818 5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/></svg>
+          Chat WhatsApp Sekarang
+        </a>
+        <p class="cta-note">Jika bisnis kamu pakai WhatsApp sebagai jalur utama penjualan dan ingin lead yang lebih terukur — mari berdiskusi dan lihat apakah saya bisa membantu.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INTERACTIVE LIGHTBOX MODAL -->
+<div id="screenshotLightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img id="lightboxImage" class="lightbox-content" src="" alt="Bukti Performa Pembesaran" onclick="event.stopPropagation()">
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © 2026 Bagus Febriansyah &nbsp;·&nbsp; Meta Ads & WhatsApp Lead Generation Specialist &nbsp;·&nbsp; Malang, Indonesia
+  </div>
+</footer>
+
+<!-- LIGHTBOX INTERACTION SCRIPT -->
+<script>
+function openLightbox(imageUrl) {
+  const lightbox = document.getElementById('screenshotLightbox');
+  const lightboxImg = document.getElementById('lightboxImage');
+  if (lightbox && lightboxImg) {
+    lightboxImg.src = imageUrl;
+    lightbox.classList.add('active');
+    // Prevent background scrolling when modal is active
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('screenshotLightbox');
+  if (lightbox) {
+    lightbox.classList.remove('active');
+    // Restore normal background scrolling
+    document.body.style.overflow = '';
+  }
+}
+
+// Close lightbox on Escape key press
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeLightbox();
+  }
+});
+</script>
+
+</body>
+</html>
